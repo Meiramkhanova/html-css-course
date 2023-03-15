@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Flexbox</title>
+    <style>
+      .box {
+        margin-top: 100px;
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+      }
+      .second-div {
+        display: flex;
+        padding-right: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .image-cat {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-right: 15px;
+      }
+      .first-text-line {
+        display: flex;
+        justify-content: space-between;
+      }
+      .top-sentence {
+        color: grey;
+        margin-bottom: 20px;
+      }
+      .all-text-lines {
+        flex: 1;
+      }
+      .time {
+        color: gray;
+        font-size: 16px;
+      }
+      .bold-text {
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .last-text {
+        color: gray;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="top-sentence">ALL INBOXES</div>
+      <div class="second-div">
+        <div class="img">
+          <img class="image-cat" src="/thumbnails/cat.jpg" alt="" />
+        </div>
+        <div class="all-text-lines">
+          <div class="first-text-line">
+            <div class="bold-text">Chewy Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="bold-text">Biggest sales of the year</div>
+          <div class="last-text">
+            Hey there! We're waiting to tell you about our...
+          </div>
+        </div>
+      </div>
+      <div class="second-div">
+        <div class="img">
+          <img class="image-cat" src="/thumbnails/dog.jpg" alt="" />
+        </div>
+        <div class="all-text-lines">
+          <div class="first-text-line">
+            <div class="bold-text">Chewy Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="bold-text">Biggest sales of the year</div>
+          <div class="last-text">
+            Hey there! We're waiting to tell you about our...
+          </div>
+        </div>
+      </div>
+      <div class="second-div">
+        <div class="img">
+          <img class="image-cat" src="/thumbnails/cat2.jpg" alt="" />
+        </div>
+        <div class="all-text-lines">
+          <div class="first-text-line">
+            <div class="bold-text">Chewy Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+          <div class="bold-text">Biggest sales of the year</div>
+          <div class="last-text">
+            Hey there! We're waiting to tell you about our...
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
